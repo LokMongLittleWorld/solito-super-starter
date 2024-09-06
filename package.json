@@ -6,6 +6,7 @@
     "packages/*"
   ],
   "devDependencies": {
+    "@types/js-cookie": "^3.0.6",
     "@types/jsonwebtoken": "^9.0.6",
     "@types/react": "^18.3.3",
     "@types/react-native-dotenv": "^0.2.2",
