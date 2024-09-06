@@ -6,6 +6,10 @@ A powerful and scalable cross-platform super starter kit for building React and 
 
 Solito Super Starter is a comprehensive boilerplate that combines the best of web and mobile development. It leverages Solito to create a unified codebase for both React (Next.js) and React Native (Expo) applications, providing a seamless development experience across platforms.
 
+## Live Demo
+
+Check out the live demo of the web version [here](https://solito-super-starter-next.vercel.app/).
+
 ## Features
 
 - 🔐 JWT Authentication
