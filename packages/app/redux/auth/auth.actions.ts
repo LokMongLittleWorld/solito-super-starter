@@ -12,7 +12,8 @@ export const login = createAsyncThunk(
       const response = await loginService(params);
       return response;
     } catch (error) {
-      showToast({ type: NOTIFICATION_TYPE.ERROR, message: error.message });
+      const errorMessage = (error as Error).message;
+      showToast({ type: NOTIFICATION_TYPE.ERROR, message: errorMessage });
       return rejectWithValue(error);
     }
   }
