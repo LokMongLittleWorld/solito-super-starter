@@ -5,7 +5,7 @@ import { useAppDispatch } from 'app/redux/store';
 import { getUserProfile } from 'app/redux/users/users.actions';
 import { getUserBasicProfile, setCurrentuser } from 'app/redux/users/users.slice';
 import { ILoginParams } from 'app/types/auth.types';
-import { StorageKey } from 'app/types/common.types';
+import { StorageKey, TODO } from 'app/types/common.types';
 import { getStorageVariable } from 'app/utils/common';
 import { isTokenValid } from 'app/utils/jwt';
 import React, { useContext, useEffect } from 'react';
@@ -16,7 +16,7 @@ interface IAuthContext {
   token: string | null;
   profile: RootState['users']['profile'];
   isAuthenticated: boolean;
-  login: (params: ILoginParams) => Promise<void>;
+  login: (params: ILoginParams) => Promise<TODO>;
   logout: () => Promise<void>;
 }
 

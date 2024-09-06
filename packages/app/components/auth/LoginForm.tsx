@@ -8,6 +8,7 @@ import { Button, View } from 'app/design/common';
 import { ILoginParams } from 'app/types/auth.types';
 import { useAuth } from 'app/provider/auth';
 import { useRouter } from 'solito/router';
+import { TODO } from 'app/types/common.types';
 
 const schema = z.object({
   email: z.string().email('Invalid email address'),
@@ -30,7 +31,7 @@ const LoginForm = () => {
   });
 
   const onSubmit = async (data: FormData) => {
-    const response: any = await login(data as ILoginParams);
+    const response: TODO = await login(data as ILoginParams);
     if (response?.meta?.requestStatus === 'fulfilled') {
       replace('/');
     }
