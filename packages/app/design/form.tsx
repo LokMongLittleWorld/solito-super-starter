@@ -1,7 +1,7 @@
-import { TextInput as ReactNativeTextInput } from 'react-native';
+import { TextInput as ReactNativeTextInput, TextInputProps } from 'react-native';
 import { styled } from 'nativewind';
 
-export const TextInput = styled(
+export const TextInput = styled<TextInputProps>(
   ({ placeholder, ...props }) => (
     <ReactNativeTextInput placeholder={placeholder} placeholderTextColor="gray" {...props} />
   ),
